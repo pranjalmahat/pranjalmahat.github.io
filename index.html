@@ -258,36 +258,57 @@
         }
 
         .hero h1 {
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.05rem;
+            font-weight: 750;
             letter-spacing: -0.02em;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.4rem;
             animation: none;
         }
 
         .hero .subtitle {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--muted);
-            margin-bottom: 1rem;
+            margin-bottom: 0.85rem;
             animation: none;
             opacity: 1;
+            font-weight: 600;
+            letter-spacing: 0.02em;
         }
 
         .hero .description {
             font-size: 0.95rem;
             color: var(--muted);
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.85rem;
             animation: none;
             opacity: 1;
+            text-align: justify;
+            text-justify: inter-word;
+            hyphens: auto;
         }
 
-        .hero-points {
-            margin: 0 0 1.25rem 1.15rem;
+        @media (max-width: 768px) {
+            .hero .description {
+                text-align: left;
+            }
+        }
+
+        .hero-focus {
+            margin: 0.15rem 0 0 1.1rem;
             color: var(--text);
+            font-size: 0.9rem;
         }
 
-        .hero-points li {
-            margin: 0.35rem 0;
+        .hero-focus li {
+            margin: 0.3rem 0;
+        }
+
+        .hero-focus strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .hero-focus span {
+            color: var(--text);
         }
 
         .hero-links {
@@ -572,6 +593,10 @@
                 padding-top: 2.5rem;
             }
 
+            .hero .description {
+                text-align: left;
+            }
+
             .hero-grid {
                 grid-template-columns: 1fr;
                 gap: 1.25rem;
@@ -660,19 +685,14 @@
                     <h1>Pranjal Mahat</h1>
                     <p class="subtitle">Biomedical Engineer</p>
                     <p class="description">
-                        Passionate about developing innovative healthcare technology solutions that bridge engineering and medicine to improve patient care and medical diagnostics.
+                        I am a Biomedical Engineering student with a strong interest in developing practical healthcare solutions that address real clinical needs. Through hands-on experience in hospital environments and involvement in projects such as IoT-based patient monitoring systems and portable medical devices, I have built a solid foundation in biomedical equipment, sensors, and healthcare technologies. I am particularly interested in creating simple, reliable solutions that can support medical professionals and enhance patient care in real-world settings. With a focus on continuous learning, teamwork, and practical application, I aim to contribute to meaningful and impactful innovations in the healthcare field.
                     </p>
-                    <ul class="hero-points">
-                        <li>IoT medical devices</li>
-                        <li>Patient monitoring systems</li>
-                        <li>Healthcare technology solutions</li>
-                    </ul>
                 </div>
                 <div class="hero-icons" aria-label="Profile links">
                     <a class="icon-link" href="https://www.linkedin.com/in/pranjal-mahat-296862336?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 23.5h4V7.5h-4v16ZM8.5 7.5h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.09v9.91h-4v-8.79c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.29-3.38 4.66v8.93h-4v-16Z"/>
-                        </svg>
+                    </svg>
                     </a>
                     <a class="icon-link" href="https://github.com/pranjalmahat" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
